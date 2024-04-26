@@ -7,6 +7,7 @@ import EveryThing from "../Pages/EveryThing";
 
 
 import About from "../Pages/About";
+import CartProduct from "../Components/CartProduct/CartProduct";
 const pagesRoute = createBrowserRouter([
     {
         path:'/',
@@ -28,6 +29,10 @@ const pagesRoute = createBrowserRouter([
             {
                 path:'/about',
                 element:<About/>
+            },
+            {
+                path:'/cart',
+                element:<CartProduct/>
             }
         ]
 
