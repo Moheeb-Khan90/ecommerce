@@ -2,12 +2,11 @@ import { createBrowserRouter } from "react-router-dom";
 import Navbar from "../Components/Navbar/Navbar";
 import Home from '../Pages/Home'
 import SingleProduct from "../Pages/SingleProduct";
-
 import EveryThing from "../Pages/EveryThing";
-
-
 import About from "../Pages/About";
+import Contact from "../Pages/Contact";
 import CartProduct from "../Components/CartProduct/CartProduct";
+
 const pagesRoute = createBrowserRouter([
     {
         path:'/',
@@ -33,6 +32,10 @@ const pagesRoute = createBrowserRouter([
             {
                 path:'/cart',
                 element:<CartProduct/>
+            },
+            {
+                path:'/contact',
+                element:<Contact/>
             }
         ]
 

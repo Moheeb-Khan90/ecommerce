@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 const Product = ({ product }) => {
     const [cartQuantity, setCartQuantity] = useState(0)
     const [cartMessage, setCartMessage] = useState()
-    const [image,setImage] = useState(product.images[0])
+    const [image, setImage] = useState(product.images[0])
 
     const handleDecrement = () => {
         cartQuantity < 1 ? setCartQuantity(1) : setCartQuantity((prev) => prev - 1)
@@ -11,17 +11,17 @@ const Product = ({ product }) => {
 
     const handleIncrement = () => {
         const isOutOfStock = product.stock <= cartQuantity;
-    
+
         if (isOutOfStock) {
-            setCartMessage('out of stock') 
-         
+            setCartMessage('out of stock')
+
         } else {
-            setCartMessage('') 
+            setCartMessage('')
             setCartQuantity(prevQuantity => prevQuantity + 1);
-           
+
         }
     }
-   
+
     return (
         <>
             <section className='w-full h-[32rem] my-5 flex flex-wrap mx-auto gap-2 justify-center xsm:flex-col md:flex-row xsm:h-auto sm:h-auto'>
@@ -47,11 +47,11 @@ const Product = ({ product }) => {
                         {
                             product.images.map((item) => (
                                 <div className='size-14 border cursor-pointer' key={item}>
-                                    <img 
-                                    className='w-full h-full' 
-                                    src={item} 
-                                    alt={item} 
-                                    onClick={()=>setImage(item)}
+                                    <img
+                                        className='w-full h-full'
+                                        src={item}
+                                        alt={item}
+                                        onClick={() => setImage(item)}
 
                                     />
                                 </div>
