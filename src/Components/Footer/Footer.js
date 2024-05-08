@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className='w-full  flex gap-0 my-4 p-2 capitalize flex-wrap'>
             <div className='flex justify-center align-center w-80'>
-                <a href="">
+                <a href="/">
                     <img src={logo} alt="" />
                 </a>
             </div>
@@ -13,22 +13,22 @@ const Footer = () => {
                 <div className='flex flex-col justify-center gap-1'>
 
                     <span className='text-2xl font-semibold my-2'>For Her</span>
-                    <a href="" className='hover:text-orange-400 '>womens jeans</a>
-                    <a href="" className='hover:text-orange-400 '>tops and shirts</a>
-                    <a href="" className='hover:text-orange-400 '>women jackets</a>
-                    <a href="" className='hover:text-orange-400 '>heels and flats</a>
-                    <a href="" className='hover:text-orange-400 '>women accessories</a>
+                    <a href="/" className='hover:text-orange-400 '>womens jeans</a>
+                    <a href="/" className='hover:text-orange-400 '>tops and shirts</a>
+                    <a href="/" className='hover:text-orange-400 '>women jackets</a>
+                    <a href="/" className='hover:text-orange-400 '>heels and flats</a>
+                    <a href="/" className='hover:text-orange-400 '>women accessories</a>
                 </div>
             </div>
             <div className='flex justify-center align-middle w-96'>
                 <div className='flex flex-col justify-center gap-1'>
 
                     <span className='text-2xl font-semibold my-2'>For him</span>
-                    <a href="" className='hover:text-orange-400 '>mens jeans</a>
-                    <a href="" className='hover:text-orange-400 '>mens shirts</a>
-                    <a href="" className='hover:text-orange-400 '>mens jackets</a>
-                    <a href="" className='hover:text-orange-400 '>mens shoes</a>
-                    <a href="" className='hover:text-orange-400 '>mens accessories</a>
+                    <a href="/" className='hover:text-orange-400 '>mens jeans</a>
+                    <a href="/" className='hover:text-orange-400 '>mens shirts</a>
+                    <a href="/" className='hover:text-orange-400 '>mens jackets</a>
+                    <a href="/" className='hover:text-orange-400 '>mens shoes</a>
+                    <a href="/" className='hover:text-orange-400 '>mens accessories</a>
                 </div>
             </div>
 

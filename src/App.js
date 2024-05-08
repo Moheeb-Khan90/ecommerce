@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <RouterProvider router={pagesRoute} />
-      <Footer/>
+      <Footer />
     </>
   );
 }
