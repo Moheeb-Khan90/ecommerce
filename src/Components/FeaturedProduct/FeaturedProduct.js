@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const FeaturedProduct = ({ products }) => {
     if (!products || !products.products) {
-        return null; // or any loading indicator
+        return null
     }
     return (
         <>
